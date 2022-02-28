@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+td {
+  border: 2px solid black;
+  border-color: black;
+  padding: 0px;
+}
+
+table {
+  
+  width: 800px;
+  height: 800px;
+  border-collapse: collapse;
+}
+
+td {
+  text-align: center;
+}
+
+.game-board {
+  padding-top: 50px;
+  padding-left: 50px;
+
+}
