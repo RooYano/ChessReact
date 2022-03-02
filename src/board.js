@@ -1,7 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Piece from './Components/piece';
 
 function Square(props) {
+    let piece = '';
+    if (Board.state.gameState[props.value] != '') {
+        piece = '<P'
+
+    }
+    
     return (
         <td
             id={props.value}
@@ -9,6 +16,8 @@ function Square(props) {
             // onDragOver={props.onDragOver}
             >
             {props.value}
+            {
+            }
         </td>
     );
 }
@@ -49,7 +58,7 @@ class Board extends React.Component {
             rows.push(this.renderSquare(i))
         }
 
-        return <tr><td className={'row ' + row}>{row}</td>{rows}</tr>
+        return <tr><th className={'row ' + row}>{row}</th>{rows}</tr>
 
     }
 
