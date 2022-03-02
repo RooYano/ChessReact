@@ -22,7 +22,7 @@ class Board extends React.Component {
             // piece ID breakdown: first letter is type of piece (r foor rook, n for knight, b for bishop, q for queen, k for king, p for pawn)
             // position info is square ID where piece is located. goes from 0-63
             // counter info is for moves such as castling and pawn moves. might consider removing it for pieces that do not needed but added an empty string for readability.
-            boardLive: [["rW1",0,0], ["nW1",1,''], ["bW1",2,''], ["qW1",3,''], ["kW1",4,''], ["bW2",5,''], ["nW2",6,''], ["rW2",7,0],
+            gameState: [["rW1",0,0], ["nW1",1,''], ["bW1",2,''], ["qW1",3,''], ["kW1",4,''], ["bW2",5,''], ["nW2",6,''], ["rW2",7,0],
                         ["pW1",8,0], ["pW2",9,0], ["pW3",10,0], ["pW4",11,0], ["pW5",12,0], ["pW6",13,0], ["pW7",14,0], ["pW8",15,0],
                         "", "", "", "", "", "", "", "",
                         "", "", "", "", "", "", "", "",
